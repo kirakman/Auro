@@ -22,7 +22,20 @@ p {
 .right {
     flex: 1; /* A parte da direita ocupa o máximo possível */
     display: flex; /* Para garantir que a imagem se ajuste corretamente */
-    justify-content: center; /* Centraliza a imagem */
+    justify-content: center;
+    animation: appear;
+    animation-timeline: view(); /* Centraliza a imagem */
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
 }
 
 .right img {

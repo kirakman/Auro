@@ -1,0 +1,39 @@
+.container1 {
+    display: flex; /* Cria um layout de linha com flexbox */
+    justify-content: space-between; /* Espaça as duas partes igualmente */
+    align-items: center; /* Alinha as partes verticalmente */
+    gap: 20px; /* Espaço entre os dois lados */
+    padding: 20px; /* Adiciona algum padding ao redor do container */
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+p {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.left {
+    flex: 1; /* A parte da esquerda ocupa o máximo possível */
+}
+
+.right {
+    flex: 1; /* A parte da direita ocupa o máximo possível */
+    display: flex; /* Para garantir que a imagem se ajuste corretamente */
+    justify-content: center; /* Centraliza a imagem */
+}
+
+.right img {
+    max-width: 100%; /* A imagem não ultrapassa a largura disponível */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+h1 {
+    color: white; /* Cor do título */
+}
+
+.purple-title {
+    color: #A683FF;
+}

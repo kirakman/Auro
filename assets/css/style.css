@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1B1B1B;
+    min-height: 100vh;
+}
+
+/* Animação de fundo com linhas finas e diagonais */
+.background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        45deg, 
+        rgba(255, 255, 255, 0.1) 0px, 
+        rgba(255, 255, 255, 0.1) 1px, 
+        rgba(255, 255, 255, 0.05) 1px, 
+        rgba(255, 255, 255, 0.05) 3px
+    );
+    animation: animate-lines 10s linear infinite;
+    z-index: -1; /* Coloca a animação atrás do conteúdo */
+}
+
+/* Animação suave das linhas diagonais */
+@keyframes animate-lines {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 300px 300px;
+    }
+}
+
+/* Configurações de fontes */
+@font-face {
+    font-family: 'Priego-Bold';
+    src: url('../fonts/Fontspring-DEMO-priego-bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Priego-Light';
+    src: url('../fonts/Fontspring-DEMO-priego-light.otf') format('truetype');
+}
+
+h1 {
+    font-family: 'Priego-Bold';
+}
+
+li {
+    font-family: 'Priego-Light';
+    letter-spacing: 1px;
+}
+
+/* Estilos adicionais para o conteúdo */
+#header, #container1 {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}

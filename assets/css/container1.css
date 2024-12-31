@@ -1,9 +1,9 @@
 .container1 {
-    display: flex; /* Cria um layout de linha com flexbox */
-    justify-content: space-between; /* Espaça as duas partes igualmente */
-    align-items: center; /* Alinha as partes verticalmente */
-    gap: 20px; /* Espaço entre os dois lados */
-    padding: 20px; /* Adiciona algum padding ao redor do container */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px; 
 }
 
 h1 {
@@ -16,15 +16,15 @@ p {
 }
 
 .left {
-    flex: 1; /* A parte da esquerda ocupa o máximo possível */
+    flex: 1;
 }
 
 .right {
-    flex: 1; /* A parte da direita ocupa o máximo possível */
-    display: flex; /* Para garantir que a imagem se ajuste corretamente */
+    flex: 1; 
+    display: flex;
     justify-content: center;
-    animation: appear;
-    animation-timeline: view(); /* Centraliza a imagem */
+    /* animation: appear;
+    animation-timeline: view(); */
 }
 
 @keyframes appear {
@@ -39,12 +39,12 @@ p {
 }
 
 .right img {
-    max-width: 100%; /* A imagem não ultrapassa a largura disponível */
-    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; 
+    height: auto; 
 }
 
 h1 {
-    color: white; /* Cor do título */
+    color: white;
 }
 
 .purple-title {

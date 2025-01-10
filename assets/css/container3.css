@@ -1,3 +1,10 @@
-h1 {
-    color: green;
+.background-img {
+    display: flex;
+    justify-content: center;
+    padding-top: 7%;
+}
+
+.background-img img {
+    width: 95%;
+    height: auto;
 }

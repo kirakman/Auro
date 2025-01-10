@@ -23,8 +23,6 @@ p {
     flex: 1; 
     display: flex;
     justify-content: center;
-    /* animation: appear;
-    animation-timeline: view(); */
 }
 
 @keyframes appear {

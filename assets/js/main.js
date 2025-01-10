@@ -46,4 +46,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const container3Container = document.getElementById('container3');
+
+    fetch('components/container3.html')
+        .then(response => {
+            if (!response.ok) throw new Error('Failed to fetch header');
+            return response.text();
+        })
+        .then(data => {
+            container3Container.innerHTML = data;
+        })
+        .catch(error => {
+            console.error('Error loading header:', error);
+        });
+});
+
 
